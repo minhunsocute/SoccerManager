@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56FC9D6A-9EB9-436E-8023-77954F196B20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HH</RootNamespace>
+    <AssemblyName>HH</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.2.3, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.3\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Frameworks, Version=5.11.0.10, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Frameworks.5.11.0\lib\net472\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accept_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accept_user.Designer.cs">
+      <DependentUpon>accept_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_match.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_match.Designer.cs">
+      <DependentUpon>add_match.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allPlayer.Designer.cs">
+      <DependentUpon>allPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="all_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="all_user.Designer.cs">
+      <DependentUpon>all_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="champion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="champion.Designer.cs">
+      <DependentUpon>champion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choose_watch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choose_watch.Designer.cs">
+      <DependentUpon>choose_watch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coach.Designer.cs">
+      <DependentUpon>coach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertCoach.Designer.cs">
+      <DependentUpon>insertCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertScore.Designer.cs">
+      <DependentUpon>insertScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insert_player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insert_player.Designer.cs">
+      <DependentUpon>insert_player.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insert_ref.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insert_ref.Designer.cs">
+      <DependentUpon>insert_ref.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insert_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insert_result.Designer.cs">
+      <DependentUpon>insert_result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading.Designer.cs">
+      <DependentUpon>loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All_clb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All_clb.Designer.cs">
+      <DependentUpon>All_clb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insert_clb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insert_clb.Designer.cs">
+      <DependentUpon>insert_clb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="match_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="match_schedule.Designer.cs">
+      <DependentUpon>match_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="message.Designer.cs">
+      <DependentUpon>message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="my_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="my_account.Designer.cs">
+      <DependentUpon>my_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="play.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="play.Designer.cs">
+      <DependentUpon>play.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLGB2DataSet.cs">
+      <DependentUpon>QLGB2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLGB2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLGB2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ref.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ref.Designer.cs">
+      <DependentUpon>ref.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ref_toMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ref_toMatch.Designer.cs">
+      <DependentUpon>ref_toMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result.Designer.cs">
+      <DependentUpon>result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="result_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="result_user.Designer.cs">
+      <DependentUpon>result_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="score.Designer.cs">
+      <DependentUpon>score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signin.Designer.cs">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sign_inUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign_inUser.Designer.cs">
+      <DependentUpon>sign_inUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="top_goal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="top_goal.Designer.cs">
+      <DependentUpon>top_goal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateClbForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateClbForm.Designer.cs">
+      <DependentUpon>updateClbForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_home.Designer.cs">
+      <DependentUpon>user_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_login.Designer.cs">
+      <DependentUpon>user_login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="accept_user.resx">
+      <DependentUpon>accept_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_match.resx">
+      <DependentUpon>add_match.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allPlayer.resx">
+      <DependentUpon>allPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All_clb.resx">
+      <DependentUpon>All_clb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="all_user.resx">
+      <DependentUpon>all_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="champion.resx">
+      <DependentUpon>champion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choose_watch.resx">
+      <DependentUpon>choose_watch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coach.resx">
+      <DependentUpon>coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertCoach.resx">
+      <DependentUpon>insertCoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertScore.resx">
+      <DependentUpon>insertScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insert_player.resx">
+      <DependentUpon>insert_player.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insert_ref.resx">
+      <DependentUpon>insert_ref.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insert_result.resx">
+      <DependentUpon>insert_result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loading.resx">
+      <DependentUpon>loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insert_clb.resx">
+      <DependentUpon>insert_clb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="match_schedule.resx">
+      <DependentUpon>match_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="message.resx">
+      <DependentUpon>message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="my_account.resx">
+      <DependentUpon>my_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="play.resx">
+      <DependentUpon>play.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ref.resx">
+      <DependentUpon>ref.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ref_toMatch.resx">
+      <DependentUpon>ref_toMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="result.resx">
+      <DependentUpon>result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="result_user.resx">
+      <DependentUpon>result_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="score.resx">
+      <DependentUpon>score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signin.resx">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sign_inUser.resx">
+      <DependentUpon>sign_inUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="top_goal.resx">
+      <DependentUpon>top_goal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateClbForm.resx">
+      <DependentUpon>updateClbForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_home.resx">
+      <DependentUpon>user_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_login.resx">
+      <DependentUpon>user_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLGB2DataSet.xsc">
+      <DependentUpon>QLGB2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLGB2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLGB2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLGB2DataSet.xss">
+      <DependentUpon>QLGB2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\outline_sports_soccer_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_close_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pl_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pl_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_volume_up_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PL_ATHEM_COVER_2020_1C_WEB_BANNER_HD_RGB.jpg" />
+    <None Include="Resources\thumb_8931_default_news_size_5.jpeg" />
+    <None Include="Resources\score_all.png" />
+    <None Include="Resources\thongke.png" />
+    <None Include="Resources\tk.png" />
+    <None Include="Resources\3c2ed062-0501-444c-9752-7e576e060552.jpg" />
+    <None Include="Resources\mohinh.png" />
+    <None Include="Resources\1200px-Premier_League_Logo.svg.png" />
+    <None Include="Resources\load.png" />
+    <None Include="Resources\3d679e1e4880c06092aa5f79f31544fe.jpg" />
+    <None Include="Resources\6d6a8feec438c4e108d03862446786ca.jpg" />
+    <None Include="Resources\47-478744_amazing-premier-league-hd-wallpaper-free-data-src.jpg" />
+    <None Include="Resources\379ab160435981.5a4d0f2432b3e.jpg" />
+    <None Include="Resources\c022693e8cf3d3921af34c193793c75a.png" />
+    <None Include="Resources\HD-wallpaper-kante-chelsea-ngolo-france-football-chelsea-football-club-chelsea-fc-ngolo-kante-player-thumbnail.jpg" />
+    <None Include="Resources\0ea9795d73d98da26419eab7c08894d4.jpg" />
+    <None Include="Resources\e57908aff0f6f4dec8b8d79f2b8e718e.png" />
+    <Content Include="Resources\outline_volume_mute_black_24dp.jpg" />
+    <None Include="Resources\t6 %281%291.png" />
+    <None Include="Resources\t90.png" />
+    <None Include="Resources\t941.png" />
+    <None Include="Resources\t45.png" />
+    <None Include="Resources\t43.png" />
+    <None Include="Resources\t94.png" />
+    <None Include="Resources\t57.png" />
+    <None Include="Resources\t36.png" />
+    <None Include="Resources\t31.png" />
+    <None Include="Resources\t21.png" />
+    <None Include="Resources\t20.png" />
+    <None Include="Resources\t14.png" />
+    <None Include="Resources\t13.png" />
+    <None Include="Resources\t11.png" />
+    <None Include="Resources\t8.png" />
+    <None Include="Resources\t7.png" />
+    <None Include="Resources\t6 %281%29.png" />
+    <None Include="Resources\t4.png" />
+    <None Include="Resources\t2.png" />
+    <None Include="Resources\t1.png" />
+    <None Include="Resources\t3.png" />
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
